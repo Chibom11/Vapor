@@ -1,12 +1,45 @@
-# React + Vite
+# 🌀 Vapor — Real-time Chat App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Vapor** is a lightweight real-time chat app built using **React (Vite)** on the frontend and a custom **WebSocket server** using Node.js (`ws`) on the backend.
 
-Currently, two official plugins are available:
+> 💬 Create or join a chat room using a unique room ID and enjoy real-time messaging — fast, private, and collaborative.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔗 Create and join private chat rooms
+- ⚡ Real-time communication using WebSockets
+- 🧠 Message history stored per room (using `localStorage`)
+- 🌈 Retro UI with custom font and theming
+- 📋 Clipboard support for room ID sharing
+- 🔌 Custom built WebSocket server
+- 🔐 Room-based isolation — messages stay in their room
+- 🌐 Fully responsive and minimal
+
+---
+
+## 📂 Project Structure
+
+```bash
+Vapor/
+├── backend/               # WebSocket server
+│   └── server.js
+├── public/                # Static assets
+├── src/                   # Frontend React components
+│   ├── components/
+│   │   ├── ChatInterface.jsx
+│   │   └── JoinRoom.jsx
+│   ├── contexts/
+│   │   └── IdContext.jsx
+│   └── App.jsx
+├── .gitignore
+├── README.md
+├── package.json
+└── vite.config.js
+
+
+Screenshots
+ ![alt text](image.png)
+ ![alt text](image-1.png)
+ ![alt text](image-2.png)
