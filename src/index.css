@@ -1,0 +1,25 @@
+/* src/index.css */
+
+/* 1. Import external fonts FIRST */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* 2. THEN import Tailwind's styles */
+@import "tailwindcss";
+
+/* 3. Finally, define your theme customizations */
+@theme {
+  /* Add your custom font definition here */
+  --font-press-start: "Press Start 2P", ui-sans-serif, system-ui, sans-serif;
+
+  /* Your existing animation definition */
+  /* After */
+--animate-marquee: marquee start 2s 25s linear infinite backwards;
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
